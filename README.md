@@ -5,3 +5,9 @@ This is a Chrome extension that will log all DFP ad requests with status 200 and
 I got tired of digging through the network tab to debug ad calls, so I made this extension.
 
 Please enjoy; feature requests should be referred to the [circular file](https://en.wiktionary.org/wiki/circular_file).
+
+## Installation
+
+- navigate to `chrome://extensions/` in a new Chrome window.
+- turn on developer mode (toggle on top right).
+- click "load unpacked" and select this directory
