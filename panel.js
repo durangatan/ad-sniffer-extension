@@ -68,19 +68,14 @@ function getTableRows(tableRows = AD_CALLS) {
   return tableRows
     .map(
       tableRow => `<tr>
-    ${TABLE_HEADERS.filter(tableHeader => !DISABLED_TABLE_HEADERS.includes(tableHeader))
-      .map(tableHeaderKey => `<td>${tableRow[tableHeaderKey]}</td>`)
-      .join('')}
+    ${TABLE_HEADERS.map(tableHeaderKey => `<td>${tableRow[tableHeaderKey]}</td>`).join('')}
     </tr>`
     )
     .join('');
 }
 
 function getTableHeaders(tableHeaders = TABLE_HEADERS) {
-  return tableHeaders
-    .filter(tableHeader => !DISABLED_TABLE_HEADERS.includes(tableHeader))
-    .map(tableHeader => `<th>${tableHeader}</th>`)
-    .join('');
+  return tableHeaders.map(tableHeader => `<th>${tableHeader}</th>`).join('');
 }
 
 function updateTable(adCalls) {

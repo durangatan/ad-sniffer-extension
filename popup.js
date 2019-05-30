@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const preserveLog = document.getElementById('preserve-log');
-  chrome.storage.local.get(['disabledTableHeaders', 'preserveLog'], function(result) {
+  chrome.storage.local.get(['preserveLog'], function(result) {
     if (result.preserveLog) {
       if (preserveLog) {
         preserveLog.checked = result.preserveLog;
