@@ -1,0 +1,9 @@
+{
+  "name": "Ad Calls panel",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "See Ad calls made by a page.",
+  "devtools_page": "devtools.html",
+  "browser_action": { "default_popup": "popup.html" },
+  "permissions": ["tabs", "storage", "http://*/*", "https://*/*"]
+}
